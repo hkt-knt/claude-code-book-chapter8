@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "description": "Claude Code book - Chapter 8 template",
   "type": "module",
+  "bin": {
+    "task": "./dist/cli/index.js"
+  },
   "scripts": {
     "prepare": "husky",
     "build": "tsc",
@@ -40,5 +43,9 @@
       "eslint --fix",
       "prettier --write"
     ]
+  },
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "commander": "^13.1.0"
   }
 }
